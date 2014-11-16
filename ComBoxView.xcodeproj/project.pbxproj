@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66C576D11A18E8D700B7AE13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576D01A18E8D700B7AE13 /* main.m */; };
+		66C576D41A18E8D700B7AE13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576D31A18E8D700B7AE13 /* AppDelegate.m */; };
+		66C576D71A18E8D700B7AE13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576D61A18E8D700B7AE13 /* ViewController.m */; };
+		66C576DA1A18E8D700B7AE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C576D81A18E8D700B7AE13 /* Main.storyboard */; };
+		66C576DC1A18E8D700B7AE13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C576DB1A18E8D700B7AE13 /* Images.xcassets */; };
+		66C576DF1A18E8D700B7AE13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C576DD1A18E8D700B7AE13 /* LaunchScreen.xib */; };
+		66C576EB1A18E8D700B7AE13 /* ComBoxViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576EA1A18E8D700B7AE13 /* ComBoxViewTests.m */; };
+		66C577131A18EE5A00B7AE13 /* down_dark0.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C5770F1A18EE5A00B7AE13 /* down_dark0.png */; };
+		66C577141A18EE5A00B7AE13 /* ComBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C577121A18EE5A00B7AE13 /* ComBox.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66C576E51A18E8D700B7AE13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C576C31A18E8D700B7AE13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C576CA1A18E8D700B7AE13;
+			remoteInfo = ComBoxView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66C576CB1A18E8D700B7AE13 /* ComBoxView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComBoxView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C576CF1A18E8D700B7AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C576D01A18E8D700B7AE13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66C576D21A18E8D700B7AE13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66C576D31A18E8D700B7AE13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66C576D51A18E8D700B7AE13 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66C576D61A18E8D700B7AE13 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66C576D91A18E8D700B7AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66C576DB1A18E8D700B7AE13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		66C576DE1A18E8D700B7AE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		66C576E41A18E8D700B7AE13 /* ComBoxViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComBoxViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C576E91A18E8D700B7AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C576EA1A18E8D700B7AE13 /* ComBoxViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComBoxViewTests.m; sourceTree = "<group>"; };
+		66C5770F1A18EE5A00B7AE13 /* down_dark0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_dark0.png; sourceTree = "<group>"; };
+		66C577111A18EE5A00B7AE13 /* ComBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBox.h; sourceTree = "<group>"; };
+		66C577121A18EE5A00B7AE13 /* ComBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBox.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66C576C81A18E8D700B7AE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C576E11A18E8D700B7AE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66C576C21A18E8D700B7AE13 = {
+			isa = PBXGroup;
+			children = (
+				66C576CD1A18E8D700B7AE13 /* ComBoxView */,
+				66C576E71A18E8D700B7AE13 /* ComBoxViewTests */,
+				66C576CC1A18E8D700B7AE13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66C576CC1A18E8D700B7AE13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66C576CB1A18E8D700B7AE13 /* ComBoxView.app */,
+				66C576E41A18E8D700B7AE13 /* ComBoxViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66C576CD1A18E8D700B7AE13 /* ComBoxView */ = {
+			isa = PBXGroup;
+			children = (
+				66C5770A1A18E98300B7AE13 /* ComBox */,
+				66C576D21A18E8D700B7AE13 /* AppDelegate.h */,
+				66C576D31A18E8D700B7AE13 /* AppDelegate.m */,
+				66C576D51A18E8D700B7AE13 /* ViewController.h */,
+				66C576D61A18E8D700B7AE13 /* ViewController.m */,
+				66C576D81A18E8D700B7AE13 /* Main.storyboard */,
+				66C576DB1A18E8D700B7AE13 /* Images.xcassets */,
+				66C576DD1A18E8D700B7AE13 /* LaunchScreen.xib */,
+				66C576CE1A18E8D700B7AE13 /* Supporting Files */,
+			);
+			path = ComBoxView;
+			sourceTree = "<group>";
+		};
+		66C576CE1A18E8D700B7AE13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66C576CF1A18E8D700B7AE13 /* Info.plist */,
+				66C576D01A18E8D700B7AE13 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66C576E71A18E8D700B7AE13 /* ComBoxViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				66C576EA1A18E8D700B7AE13 /* ComBoxViewTests.m */,
+				66C576E81A18E8D700B7AE13 /* Supporting Files */,
+			);
+			path = ComBoxViewTests;
+			sourceTree = "<group>";
+		};
+		66C576E81A18E8D700B7AE13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66C576E91A18E8D700B7AE13 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66C5770A1A18E98300B7AE13 /* ComBox */ = {
+			isa = PBXGroup;
+			children = (
+				66C5770E1A18EE5A00B7AE13 /* source */,
+				66C577101A18EE5A00B7AE13 /* class */,
+			);
+			path = ComBox;
+			sourceTree = "<group>";
+		};
+		66C5770E1A18EE5A00B7AE13 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				66C5770F1A18EE5A00B7AE13 /* down_dark0.png */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		66C577101A18EE5A00B7AE13 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				66C577111A18EE5A00B7AE13 /* ComBox.h */,
+				66C577121A18EE5A00B7AE13 /* ComBox.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66C576CA1A18E8D700B7AE13 /* ComBoxView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C576EE1A18E8D700B7AE13 /* Build configuration list for PBXNativeTarget "ComBoxView" */;
+			buildPhases = (
+				66C576C71A18E8D700B7AE13 /* Sources */,
+				66C576C81A18E8D700B7AE13 /* Frameworks */,
+				66C576C91A18E8D700B7AE13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComBoxView;
+			productName = ComBoxView;
+			productReference = 66C576CB1A18E8D700B7AE13 /* ComBoxView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66C576E31A18E8D700B7AE13 /* ComBoxViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C576F11A18E8D700B7AE13 /* Build configuration list for PBXNativeTarget "ComBoxViewTests" */;
+			buildPhases = (
+				66C576E01A18E8D700B7AE13 /* Sources */,
+				66C576E11A18E8D700B7AE13 /* Frameworks */,
+				66C576E21A18E8D700B7AE13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C576E61A18E8D700B7AE13 /* PBXTargetDependency */,
+			);
+			name = ComBoxViewTests;
+			productName = ComBoxViewTests;
+			productReference = 66C576E41A18E8D700B7AE13 /* ComBoxViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66C576C31A18E8D700B7AE13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Boco;
+				TargetAttributes = {
+					66C576CA1A18E8D700B7AE13 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					66C576E31A18E8D700B7AE13 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 66C576CA1A18E8D700B7AE13;
+					};
+				};
+			};
+			buildConfigurationList = 66C576C61A18E8D700B7AE13 /* Build configuration list for PBXProject "ComBoxView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66C576C21A18E8D700B7AE13;
+			productRefGroup = 66C576CC1A18E8D700B7AE13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66C576CA1A18E8D700B7AE13 /* ComBoxView */,
+				66C576E31A18E8D700B7AE13 /* ComBoxViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66C576C91A18E8D700B7AE13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C576DA1A18E8D700B7AE13 /* Main.storyboard in Resources */,
+				66C576DF1A18E8D700B7AE13 /* LaunchScreen.xib in Resources */,
+				66C577131A18EE5A00B7AE13 /* down_dark0.png in Resources */,
+				66C576DC1A18E8D700B7AE13 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C576E21A18E8D700B7AE13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66C576C71A18E8D700B7AE13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C576D71A18E8D700B7AE13 /* ViewController.m in Sources */,
+				66C576D41A18E8D700B7AE13 /* AppDelegate.m in Sources */,
+				66C576D11A18E8D700B7AE13 /* main.m in Sources */,
+				66C577141A18EE5A00B7AE13 /* ComBox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C576E01A18E8D700B7AE13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C576EB1A18E8D700B7AE13 /* ComBoxViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66C576E61A18E8D700B7AE13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C576CA1A18E8D700B7AE13 /* ComBoxView */;
+			targetProxy = 66C576E51A18E8D700B7AE13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66C576D81A18E8D700B7AE13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C576D91A18E8D700B7AE13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66C576DD1A18E8D700B7AE13 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C576DE1A18E8D700B7AE13 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66C576EC1A18E8D700B7AE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66C576ED1A18E8D700B7AE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66C576EF1A18E8D700B7AE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ComBoxView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		66C576F01A18E8D700B7AE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ComBoxView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		66C576F21A18E8D700B7AE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ComBoxViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComBoxView.app/ComBoxView";
+			};
+			name = Debug;
+		};
+		66C576F31A18E8D700B7AE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ComBoxViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComBoxView.app/ComBoxView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66C576C61A18E8D700B7AE13 /* Build configuration list for PBXProject "ComBoxView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C576EC1A18E8D700B7AE13 /* Debug */,
+				66C576ED1A18E8D700B7AE13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C576EE1A18E8D700B7AE13 /* Build configuration list for PBXNativeTarget "ComBoxView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C576EF1A18E8D700B7AE13 /* Debug */,
+				66C576F01A18E8D700B7AE13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66C576F11A18E8D700B7AE13 /* Build configuration list for PBXNativeTarget "ComBoxViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C576F21A18E8D700B7AE13 /* Debug */,
+				66C576F31A18E8D700B7AE13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66C576C31A18E8D700B7AE13 /* Project object */;
+}

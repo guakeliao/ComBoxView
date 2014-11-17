@@ -8,41 +8,35 @@
 
 #import "ComBox.h"
 
+@interface ComBox()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UITableView *listTable;
+@property (nonatomic,assign) BOOL isOpen;
+@property (nonatomic,strong) UIImageView *arrow;
+
+@end
+
 @implementation ComBox
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        [self commit];
-    }
-    return self;
-}
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self commit];
-    }
-    return self;
-}
-- (void)commit
+- (void)commitForView
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.layer.borderColor = kBorderColor.CGColor;
-    btn.layer.borderWidth = 0.5;
+    btn.layer.borderColor = _borderColor.CGColor?_borderColor.CGColor:kBorderColor.CGColor;
+    btn.layer.borderWidth = _borderWidth>0?_borderWidth:0.4;
+    btn.layer.cornerRadius = _cornerRadius;
     btn.clipsToBounds = YES;
     btn.layer.masksToBounds = YES;
     btn.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     [btn addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btn];
     
-    titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(2, 0, self.frame.size.width-imgW - 5 - 2, self.frame.size.height)];
-    titleLabel.font = [UIFont systemFontOfSize:11];
-    titleLabel.backgroundColor = [UIColor clearColor];
-    titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.textColor = kTextColor;
-    [btn addSubview:titleLabel];
+    _titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(2, 0, self.frame.size.width-imgW - 5 - 2, self.frame.size.height)];
+    _titleLabel.font = [UIFont systemFontOfSize:11];
+    _titleLabel.backgroundColor = [UIColor clearColor];
+    _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.textColor = kTextColor;
+    [btn addSubview:_titleLabel];
     
     _arrow = [[UIImageView alloc]initWithFrame:CGRectMake(btn.frame.size.width - imgW - 5, (self.frame.size.height-imgH)/2.0, imgW, imgH)];
     if (!_arrowImgName)
@@ -66,15 +60,15 @@
     
     [_supView addSubview:_listTable];
     
-    titleLabel.text = [_titlesList objectAtIndex:_defaultIndex];
-    NSLog(@"%@",titleLabel.text);
+    _titleLabel.text = [_titlesList objectAtIndex:_defaultIndex];
+    NSLog(@"%@",_titleLabel.text);
 }
 
 //刷新视图
--(void)reloadData
+-(void)comBoxReloadData
 {
     [_listTable reloadData];
-    titleLabel.text = [_titlesList objectAtIndex:_defaultIndex];
+    _titleLabel.text = [_titlesList objectAtIndex:_defaultIndex];
     _arrow.image = [UIImage imageNamed:_arrowImgName];
 }
 //关闭父视图上面的其他combox
@@ -175,7 +169,7 @@
         cell.backgroundColor = [UIColor clearColor];
         UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(2, 0, self.frame.size.width-4, self.frame.size.height)];
         label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = NSTextAlignmentLeft;
+        label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont systemFontOfSize:11];
         label.textColor = kTextColor;
         label.tag = 1000;
@@ -193,7 +187,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    titleLabel.text = [_titlesList objectAtIndex:indexPath.row];
+    _titleLabel.text = [_titlesList objectAtIndex:indexPath.row];
     _isOpen = YES;
     [self tapAction];
     if (_checkTitle) {

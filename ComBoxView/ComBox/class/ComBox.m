@@ -41,7 +41,7 @@
     _arrow = [[UIImageView alloc]initWithFrame:CGRectMake(btn.frame.size.width - imgW - 5, (self.frame.size.height-imgH)/2.0, imgW, imgH)];
     if (!_arrowImgName)
     {
-        _arrow.image = [UIImage imageNamed:@"down_dark0"];
+        _arrow.image = [UIImage imageNamed:@"ComBoxView.bundle/down_dark0"];
     }
     else
     {

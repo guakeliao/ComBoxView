@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/guakeliao/ComBoxView.git',:branch => "devoloper",:tag => s.version.to_s}
 
   s.source_files  =  "ComBoxView/ComBox/class/**/*.{h,m}"
-  s.resources = "ComBoxView/ComBox/source/*.bundle"
+  s.resources = "ComBoxView/ComBox/source/**/*.bundle",ComBoxView/ComBox/source/**/*.xib"
   
   s.requires_arc = true
 

@@ -41,8 +41,8 @@
     [btn addSubview:_titleLabel];
     
     _arrow = [[UIImageView alloc]
-              initWithFrame:CGRectMake(btn.frame.size.width - imgW - 5,
-                                       (self.frame.size.height - imgH) / 2.0, imgW, imgH)];
+              initWithFrame:CGRectMake(self.frame.size.width - self.frame.size.height,
+                                       0, self.frame.size.height, self.frame.size.height)];
     if (!_arrowImgName)
     {
         _arrow.image = [UIImage imageNamed:@"ComBoxView.bundle/down_dark0"];
@@ -88,8 +88,8 @@
     _titleLabel.frame =
     CGRectMake(2, 0, self.frame.size.width - imgW - 5 - 2, self.frame.size.height);
     
-    _arrow.frame = CGRectMake(self.frame.size.width - imgW - 5,
-                              (self.frame.size.height - imgH) / 2.0, imgW, imgH);
+    _arrow.frame = CGRectMake(self.frame.size.width - self.frame.size.height,
+                              0, self.frame.size.height, self.frame.size.height);
 }
 
 

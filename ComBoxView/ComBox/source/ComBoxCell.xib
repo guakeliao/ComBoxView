@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIndentifier" id="KGk-i7-Jjw" customClass="ComBoxCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUd-3w-G3P">
+                        <rect key="frame" x="10" y="8" width="300" height="27"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JYU-28-dfp">
+                        <rect key="frame" x="8" y="42.5" width="304" height="0.5"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.85098039215686272" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="U0r-3O-80B"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="JYU-28-dfp" secondAttribute="bottom" constant="-7.5" id="1dc-VI-JdO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pUd-3w-G3P" secondAttribute="trailing" constant="2" id="CX3-wi-O0Y"/>
+                    <constraint firstItem="pUd-3w-G3P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="P8t-bw-Awu"/>
+                    <constraint firstItem="pUd-3w-G3P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ppg-eQ-Z9e"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JYU-28-dfp" secondAttribute="trailing" id="fLs-cR-YsD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pUd-3w-G3P" secondAttribute="bottom" id="h86-xK-sQP"/>
+                    <constraint firstItem="JYU-28-dfp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="q9e-M7-IaH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="304" y="249"/>
+        </tableViewCell>
+    </objects>
+</document>

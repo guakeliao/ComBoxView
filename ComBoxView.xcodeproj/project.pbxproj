@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6640993C1A1C8C0400D837BF /* ComBoxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6640993A1A1C8C0400D837BF /* ComBoxCell.xib */; };
+		6640993F1A1C8C4400D837BF /* ComBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640993D1A1C8C4400D837BF /* ComBoxCell.m */; };
 		66C576D11A18E8D700B7AE13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576D01A18E8D700B7AE13 /* main.m */; };
 		66C576D41A18E8D700B7AE13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576D31A18E8D700B7AE13 /* AppDelegate.m */; };
 		66C576D71A18E8D700B7AE13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576D61A18E8D700B7AE13 /* ViewController.m */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6640993A1A1C8C0400D837BF /* ComBoxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComBoxCell.xib; sourceTree = "<group>"; };
+		6640993D1A1C8C4400D837BF /* ComBoxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBoxCell.m; sourceTree = "<group>"; };
+		6640993E1A1C8C4400D837BF /* ComBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBoxCell.h; sourceTree = "<group>"; };
 		66C576CB1A18E8D700B7AE13 /* ComBoxView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComBoxView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C576CF1A18E8D700B7AE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66C576D01A18E8D700B7AE13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				66E560AD1A1C3FC7006B6085 /* ComBox.bundle */,
+				6640993A1A1C8C0400D837BF /* ComBoxCell.xib */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 		66C577101A18EE5A00B7AE13 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				6640993D1A1C8C4400D837BF /* ComBoxCell.m */,
+				6640993E1A1C8C4400D837BF /* ComBoxCell.h */,
 				66C577111A18EE5A00B7AE13 /* ComBox.h */,
 				66C577121A18EE5A00B7AE13 /* ComBox.m */,
 			);
@@ -233,6 +241,7 @@
 			files = (
 				66C576DA1A18E8D700B7AE13 /* Main.storyboard in Resources */,
 				66C576DF1A18E8D700B7AE13 /* LaunchScreen.xib in Resources */,
+				6640993C1A1C8C0400D837BF /* ComBoxCell.xib in Resources */,
 				66E560AE1A1C3FC7006B6085 /* ComBox.bundle in Resources */,
 				66C576DC1A18E8D700B7AE13 /* Images.xcassets in Resources */,
 			);
@@ -254,6 +263,7 @@
 			files = (
 				66C576D71A18E8D700B7AE13 /* ViewController.m in Sources */,
 				66C576D41A18E8D700B7AE13 /* AppDelegate.m in Sources */,
+				6640993F1A1C8C4400D837BF /* ComBoxCell.m in Sources */,
 				66C576D11A18E8D700B7AE13 /* main.m in Sources */,
 				66C577141A18EE5A00B7AE13 /* ComBox.m in Sources */,
 			);

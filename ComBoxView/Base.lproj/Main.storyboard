@@ -18,18 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUp-5b-7ue" customClass="ComBox">
-                                <rect key="frame" x="40" y="100" width="223" height="30"/>
+                                <rect key="frame" x="40" y="100" width="534" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="223" id="Riz-Q9-R8d"/>
                                     <constraint firstAttribute="height" constant="30" id="zTq-cj-5Mp"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Riz-Q9-R8d"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BUp-5b-7ue" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="HAw-IY-TEw"/>
-                            <constraint firstItem="BUp-5b-7ue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="Jic-iG-iAe"/>
+                            <constraint firstItem="BUp-5b-7ue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="I5q-Zh-d7k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BUp-5b-7ue" secondAttribute="trailing" constant="10" id="ezU-PK-eYX"/>
                         </constraints>
                     </view>
                     <connections>

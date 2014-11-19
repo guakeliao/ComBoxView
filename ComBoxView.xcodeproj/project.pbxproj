@@ -15,7 +15,7 @@
 		66C576DF1A18E8D700B7AE13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C576DD1A18E8D700B7AE13 /* LaunchScreen.xib */; };
 		66C576EB1A18E8D700B7AE13 /* ComBoxViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C576EA1A18E8D700B7AE13 /* ComBoxViewTests.m */; };
 		66C577141A18EE5A00B7AE13 /* ComBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C577121A18EE5A00B7AE13 /* ComBox.m */; };
-		66CC93501A1B2D540068250E /* ComBoxView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66CC934F1A1B2D530068250E /* ComBoxView.bundle */; };
+		66E560AE1A1C3FC7006B6085 /* ComBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66E560AD1A1C3FC7006B6085 /* ComBox.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		66C576EA1A18E8D700B7AE13 /* ComBoxViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComBoxViewTests.m; sourceTree = "<group>"; };
 		66C577111A18EE5A00B7AE13 /* ComBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBox.h; sourceTree = "<group>"; };
 		66C577121A18EE5A00B7AE13 /* ComBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBox.m; sourceTree = "<group>"; };
-		66CC934F1A1B2D530068250E /* ComBoxView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ComBoxView.bundle; sourceTree = "<group>"; };
+		66E560AD1A1C3FC7006B6085 /* ComBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ComBox.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 		66C5770E1A18EE5A00B7AE13 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				66CC934F1A1B2D530068250E /* ComBoxView.bundle */,
+				66E560AD1A1C3FC7006B6085 /* ComBox.bundle */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -231,9 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CC93501A1B2D540068250E /* ComBoxView.bundle in Resources */,
 				66C576DA1A18E8D700B7AE13 /* Main.storyboard in Resources */,
 				66C576DF1A18E8D700B7AE13 /* LaunchScreen.xib in Resources */,
+				66E560AE1A1C3FC7006B6085 /* ComBox.bundle in Resources */,
 				66C576DC1A18E8D700B7AE13 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

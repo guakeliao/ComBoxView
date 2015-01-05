@@ -18,24 +18,13 @@ typedef void (^CheckTitle)(NSString *string);
 
 @interface ComBox : UIView
 
-@property (nonatomic, strong)  UIView *supView;//必须设置
 @property (nonatomic, copy)    CheckTitle checkTitle;
 @property (nonatomic, strong)  NSMutableArray *titlesList;
 @property (nonatomic, assign)  NSInteger defaultIndex;
 @property (nonatomic, assign)  CGFloat tableHeight;
+@property (nonatomic, assign)  float   fontSize;
 @property (nonatomic, copy)    NSString *arrowImgName;//箭头图标名称
 
-/**
- *  关于界面美化
- */
-@property (nonatomic, assign) NSInteger cornerRadius;//圆角
-@property (nonatomic, assign) UIColor   *borderColor;//边框颜色
-@property (nonatomic, assign) NSInteger borderWidth; //边框宽度
-//@property (nonatomic, assign) NSInteger cornerRadius;//圆角
-/**
- *  必须调用,完善
- */
-- (void)commitForView;
 /**
  *  当数据更新时，手动调用，刷新数据
  */

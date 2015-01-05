@@ -25,11 +25,13 @@
 //    _demo.arrowImgName = @"down_dark0.png";
     _itemsArray = [NSMutableArray arrayWithArray:@[@"1",@"1",@"1",@"13",@"12",@"11",]];
     _demo.titlesList = _itemsArray;
-    _demo.supView = self.view;
-    _demo.cornerRadius = 3;
-    _demo.borderWidth = 2;
-    _demo.borderColor = [UIColor redColor];
-    [_demo commitForView];
+    _demo.fontSize = 11;
+    _demo.layer.cornerRadius = 2;
+    _demo.layer.borderWidth = YES;
+    _demo.layer.borderColor = [UIColor redColor].CGColor;
+    _demo.clipsToBounds = YES;
+    _demo.layer.masksToBounds = YES;
+
 //    [_demo comBoxReloadData];
 }
 
